@@ -1,0 +1,12 @@
+mfclo64
+condor.sub
+condor_run.sh
+
+# Hessian dirs
+/hessian/
+
+# Diff output
+diff_flags.txt
+diff_ini.csv
+diff_frq.csv
+diff_tag.csv
