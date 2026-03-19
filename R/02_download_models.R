@@ -2,16 +2,20 @@ library(condor)
 source("utilities.R")
 options(width=160)
 
-session <- ssh_connect("NOUOFPCALC02")
+session <- ssh_connect("NOUOFPSUBMIT")
 
 # Select Condor models that are finished
 (jobs <- condor_dir(sort="dir"))
 models <- jobs$dir[jobs$status=="finished"]
 
-# Destination folders, will be created by full_download() below
-folders <- file.path("//penguin/assessments/yft/2023/model_runs/stepwise",
-                     models)
+# Prepare SCP commands
+from <- file.path("condor", models)
+to <- "penguin:yft/2026/model_runs/stepwise"
+cmd <- paste("scp -pr", from, to)
 
-# Download results
-for(i in seq_along(folders))
-  try(full_download(folders[i]))
+# Copy from Condor to Penguin
+for(i in seq_along(from))
+{
+  message("Copying '", models[i], "'")
+  try(ssh_exec_stdout(cmd[i]))
+}
