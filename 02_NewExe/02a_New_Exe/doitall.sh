@@ -81,11 +81,11 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   1 400 6    # final six recruitment deviates set to zero
 # Fixed terminal recruitments are arithmetic mean of remaining period (not default geometric mean)
   1 398 1
-  2 177 1          # use old totpop scaling method
-  2 32 1           # and estimate totpop parameter
-  2 93 4           # set no. of recruitments per year to 4
-  2 57 4           # set no. of recruitments per year to 4
-  2 94 1 2 128 10  # initial Z = 1.0*M, i.e. initial F = 0
+  2 177 1           # use old totpop scaling method
+  2 32 1            # and estimate totpop parameter
+  2 93 4            # set no. of recruitments per year to 4
+  2 57 4            # set no. of recruitments per year to 4
+  2 94 1 2 128 100  # initial Z = 1.0*M, i.e. initial F = 0
 # Movement
   2 69 1
 # Likelihood component settings
