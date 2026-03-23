@@ -28,7 +28,7 @@ full_submit <- function(folder, version, up=TRUE, ...)
   condor_submit(folder, ...)
 }
 
-full_download <- function(folder, up=TRUE, ...)
+full_download <- function(folder, ...)
 {
   dir.create(folder, recursive=TRUE, showWarnings=FALSE)
   condor_download(local.dir=folder, ...)
