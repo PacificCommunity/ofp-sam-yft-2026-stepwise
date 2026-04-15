@@ -23,3 +23,7 @@ Fix M at MLE value from fitted YFT 2023 diagnostic model.
 ## 03f_Growth_Initial
 
 Start growth curve parameters at L2=142 and K=0.132.
+
+## 03g_Estimate_L1
+
+Estimate L1 growth parameter, rather than fixing at 19.8.
