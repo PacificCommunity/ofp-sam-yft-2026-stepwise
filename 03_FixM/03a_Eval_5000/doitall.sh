@@ -257,8 +257,8 @@ PHASE1
 # ---------
 
 mfclo64 yft.frq 01.par 02.par -file - <<PHASE2
-  1 1 1000  # set max. number of function evaluations per phase to 1000
   2 113 0   # turn off useless parameter rec_init_diff
+  1 1 500  # set max evaluations to 500
 PHASE2
 
 # ---------
@@ -347,8 +347,8 @@ mfclo64 yft.frq 08.par 09.par -file - <<PHASE9
   1 187 1  # write temporary_tag_report
   1 188 1  # write ests.rep
   1 189 1  # write .fit files
+  1 1 500  # max evals
   1 50 -2  # convergence criteria
-  1 1 500  # extra evals
 PHASE9
 
 # ----------
@@ -357,9 +357,9 @@ PHASE9
 
 mfclo64 yft.frq 09.par 10.par -file - <<PHASE10
   2 145 -1   # use SRR parameters - low penalty for deviation
-  1 1 10000
-  1 50 -5
   2 116 300  # increase Z bound for NR computations to 3.0
+  1 1 5000
+  1 50 -5
 PHASE10
 
 # ----------
@@ -370,6 +370,6 @@ mfclo64 yft.frq 10.par 11.par -file - <<PHASE11
   1 13 1     # estimate mean length of largest age class
   1 14 1     # estimate von Bertalanffy K
   1 121 1    # estimate Lorenzen scaling parameter
-  1 1 10000
+  1 1 5000
   1 50 -5
 PHASE11
