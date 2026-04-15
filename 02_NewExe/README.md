@@ -31,3 +31,11 @@ old2new <- function(old)
 }
 old2new(c(61, 77, 79, 82, 74))
 ```
+
+## 02b_Increase_Specs
+
+Modify condor.sub to increase memory requirement.
+
+## 02c_MFCL_2278e
+
+Use MFCL version 2.2.7.8e.
