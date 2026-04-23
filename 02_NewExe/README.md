@@ -23,13 +23,13 @@ sigma2old <- function(sigma)
   flag.value <- round(10 * penalty)
   flag.value
 }
-old2new <- function(old)
+old2sigma <- function(old)
 {
   sigma <- sqrt(5 / old)
   new.value <- round(100 * sigma)
   new.value
 }
-old2new(c(61, 77, 79, 82, 74))
+old2sigma(c(61, 77, 79, 82, 74))
 ```
 
 ## 02b_Increase_Specs
