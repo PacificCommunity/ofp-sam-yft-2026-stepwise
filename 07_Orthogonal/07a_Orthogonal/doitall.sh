@@ -257,8 +257,8 @@ PHASE1
 # ---------
 
 mfclo64 yft.frq 01.par 02.par -file - <<PHASE2
-  2 113 0   # turn off useless parameter rec_init_diff
   1 1 500  # set max evaluations to 500
+  2 113 0  # turn off useless parameter rec_init_diff
 PHASE2
 
 # ---------
@@ -266,9 +266,12 @@ PHASE2
 # ---------
 
 mfclo64 yft.frq 02.par 03.par -file - <<PHASE3
-  2 70 0   # activate time series of reg recruitment parameters
-  2 71 0   # estimate temporal changes in recruitment distribution
-  2 178 0  # constrain regional recruitments
+  1 155 70  # orthogonal polynomial recruitment - year effect
+  1 216 4   # orthogonal polynomial recruitment - region effect
+  1 217 3   # orthogonal polynomial recruitment - season effect
+  2 70 0    # activate time series of reg recruitment parameters
+  2 71 0    # estimate temporal changes in recruitment distribution
+  2 178 0   # constrain regional recruitments
 PHASE3
 
 # ---------
