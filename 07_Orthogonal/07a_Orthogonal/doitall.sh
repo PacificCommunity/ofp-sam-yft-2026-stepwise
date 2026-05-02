@@ -77,12 +77,12 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -36 99 33
   -37 99 33
 # Recruitment and initial population settings
-  1 149 100  # recruitment deviation penalty
-  1 400 6    # final six recruitment deviates set to zero
+  1 149 0  # recruitment deviation penalty
+  1 400 6  # final six recruitment deviates set to zero
 # Fixed terminal recruitments are arithmetic mean of remaining period (not default geometric mean)
-  1 398 1
-  2 177 1           # use old totpop scaling method
-  2 32 1            # and estimate totpop parameter
+  1 398 0           # terminal recruitment should be arithmetic mean
+  2 177 0           # use old totpop scaling method
+  2 32 0            # and estimate totpop parameter
   2 93 4            # set no. of recruitments per year to 4
   2 57 4            # set no. of recruitments per year to 4
   2 94 1 2 128 100  # initial Z = 1.0*M, i.e. initial F = 0
@@ -266,9 +266,9 @@ PHASE2
 # ---------
 
 mfclo64 yft.frq 02.par 03.par -file - <<PHASE3
-  2 70 1   # activate time series of reg recruitment parameters
-  2 71 1   # estimate temporal changes in recruitment distribution
-  2 178 1  # constrain regional recruitments
+  2 70 0   # activate time series of reg recruitment parameters
+  2 71 0   # estimate temporal changes in recruitment distribution
+  2 178 0  # constrain regional recruitments
 PHASE3
 
 # ---------
@@ -285,11 +285,11 @@ PHASE4
 # ---------
 
 mfclo64 yft.frq 04.par 05.par -file - <<PHASE5
-  -100000 1 1  # estimate time-invariant distribution of recruitment
-  -100000 2 1
-  -100000 3 1
-  -100000 4 1
-  -100000 5 1
+  -100000 1 0  # estimate time-invariant distribution of recruitment
+  -100000 2 0
+  -100000 3 0
+  -100000 4 0
+  -100000 5 0
 PHASE5
 
 # ---------
