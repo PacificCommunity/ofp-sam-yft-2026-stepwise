@@ -157,7 +157,7 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -37 32 26
 # Selectivity settings
   -999 3 37  # all selectivities equal for age class 37 and older
-  -999 26 2  # let growth variability vary with length
+  -999 26 3  # use length-based selectivity
   -999 57 3  # use cubic spline selectivity
   -999 61 5  # with 5 nodes for cubic spline
 # Grouping of fisheries with common selectivity
