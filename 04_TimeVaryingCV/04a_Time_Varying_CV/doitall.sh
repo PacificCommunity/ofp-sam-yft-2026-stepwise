@@ -33,11 +33,11 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -999 13 0
 # Survey fisheries defined
 # CPUE variation  Index CV   Time varying CV
-  -33 94 1        -33 92 29  -33 66 0
-  -34 94 1        -34 92 25  -34 66 0
-  -35 94 1        -35 92 25  -35 66 0
-  -36 94 1        -36 92 25  -36 66 0
-  -37 94 1        -37 92 26  -37 66 0
+  -33 94 1        -33 92 29  -33 66 1
+  -34 94 1        -34 92 25  -34 66 1
+  -35 94 1        -35 92 25  -35 66 1
+  -36 94 1        -36 92 25  -36 66 1
+  -37 94 1        -37 92 26  -37 66 1
 # Grouping flags for survey CPUE
    -1 99 1
    -2 99 2
@@ -157,7 +157,7 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -37 32 26
 # Selectivity settings
   -999 3 37  # all selectivities equal for age class 37 and older
-  -999 26 2  # set length-dependent selectivity option
+  -999 26 2  # let growth variability vary with length
   -999 57 3  # use cubic spline selectivity
   -999 61 5  # with 5 nodes for cubic spline
 # Grouping of fisheries with common selectivity
