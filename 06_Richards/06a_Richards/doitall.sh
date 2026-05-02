@@ -320,6 +320,15 @@ PHASE7
 # ---------
 
 mfclo64 yft.frq 07.par 08.par -file - <<PHASE8
+  1 226 1  # enable Richards growth curve
+  1 227 1  # estimate Richards growth parameter
+PHASE8
+
+# ---------
+#  PHASE 9
+# ---------
+
+mfclo64 yft.frq 08.par 09.par -file - <<PHASE9
   2 145 1    # penalty on stock-recruit pars
   1 149 0    # penalty for recruitment devs
   2 146 1    # activate estimation of SRR parameter
@@ -342,17 +351,6 @@ mfclo64 yft.frq 07.par 08.par -file - <<PHASE8
   1 189 1  # write .fit files
   1 1 500  # max evals
   1 50 -2  # convergence criteria
-PHASE8
-
-# ---------
-#  PHASE 9
-# ---------
-
-mfclo64 yft.frq 08.par 09.par -file - <<PHASE9
-  2 145 -1   # use SRR parameters - low penalty for deviation
-  2 116 300  # increase Z bound for NR computations to 3.0
-  1 1 5000
-  1 50 -4
 PHASE9
 
 # ----------
@@ -360,6 +358,17 @@ PHASE9
 # ----------
 
 mfclo64 yft.frq 09.par 10.par -file - <<PHASE10
+  2 145 -1   # use SRR parameters - low penalty for deviation
+  2 116 300  # increase Z bound for NR computations to 3.0
   1 1 5000
   1 50 -4
 PHASE10
+
+# ----------
+#  PHASE 11
+# ----------
+
+mfclo64 yft.frq 10.par 11.par -file - <<PHASE11
+  1 1 5000
+  1 50 -4
+PHASE11
