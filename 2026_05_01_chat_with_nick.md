@@ -64,6 +64,16 @@ on nseasons-1 and nregions-1. In other words, 3 * 4 = 12.
 parest_flag(218) = 12  # 3 * 4
 ```
 
+Flag                  | Setting | Operation
+--------------------- | ------- | ---------
+age_flags(113)        | 0       | Deactivates the estimation of the parameter for scaling relative init population size and recruitment
+age_flags(177)        | 0       | Turns off the assignment of the total population scalar
+age_flags(32)         | 0       | Deactivates the estimation of the overall population scaling parameter
+age_flags(70)         | 0       | Deactivates the implementation of parameters of time-series variability in regional recruitment distribution
+age_flags(71)         | 0       | Deactivates the estimation of parameters of time-series variability in regional recruitment distribution
+age_flags(178)        | 0       | Deactivates the constraint on the sum-product of the regional recruitment proportions and the regional recruitment deviates being equal 1 in each model time period
+region_flags(-100000) | 0       | Deactivates the estimation of estimation of recruitment distribution by region
+
 ## Richards growth
 
 setting parest flag 226 to 1, and estimated by setting parest flag 227 to 1
