@@ -36,3 +36,23 @@ full_submit("03_FixM/03r_Fix_M_E3", "2.2.7.8_e")
 full_submit("03_FixM/03s_MLE_2023_E3", "2.2.7.8_e")
 full_submit("03_FixM/03t_Growth_Initial_E3", "2.2.7.8_e")
 full_submit("03_FixM/03u_Estimate_L1_E3", "2.2.7.8_e")
+
+# 04_TimeVaryingCV
+full_submit("04_TimeVaryingCV/04a_Time_Varying_CV", "2.2.7.8_e")
+
+# 05_LengthBasedSel
+full_submit("05_LengthBasedSel/05a_Length_Based_Sel", "2.2.7.8_e")
+full_submit("05_LengthBasedSel/05b_LBS_From_03m", "2.2.7.8_e")
+
+# 06_Richards
+full_submit("06_Richards/06a_Richards", "2.2.7.8_e")
+full_submit("06_Richards/06b_Richards_From_03m", "2.2.7.8_e")
+
+# 07_OrthoPolyRec
+full_submit("07_OrthoPolyRec/07a_Ortho_Poly_Rec_70", "2.2.7.8_e")
+full_submit("07_OrthoPolyRec/07b_Ortho_Poly_Rec_50", "2.2.7.8_e")
+full_submit("07_OrthoPolyRec/07c_Ortho_Poly_Rec_30", "2.2.7.8_e")
+full_submit("07_OrthoPolyRec/07d_OPR_70_Interactions", "2.2.7.8_e")
+full_submit("07_OrthoPolyRec/07e_OPR_50_Interactions", "2.2.7.8_e")
+full_submit("07_OrthoPolyRec/07f_OPR_30_Interactions", "2.2.7.8_e")
+full_submit("07_OrthoPolyRec/07g_OPR_70_From_03m", "2.2.7.8_e")
