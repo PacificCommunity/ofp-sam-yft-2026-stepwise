@@ -206,6 +206,7 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -37 16 1
 # Make some longline selectivites 0 for first few age classes
    -2 75 2
+   -3 75 2
    -4 75 2
    -5 75 2
    -6 75 2
