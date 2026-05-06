@@ -43,6 +43,11 @@ full_submit("04_TimeVaryingCV/04a_Time_Varying_CV", "2.2.7.8_e")
 # 05_LengthBasedSel
 full_submit("05_LengthBasedSel/05a_Length_Based_Sel", "2.2.7.8_e")
 full_submit("05_LengthBasedSel/05b_LBS_From_03m", "2.2.7.8_e")
+full_submit("05_LengthBasedSel/05c_LBS_Constraints", "2.2.7.8_e")
+full_submit("05_LengthBasedSel/05d_LBS_Fix_Growth", "2.2.7.8_e")
+full_submit("05_LengthBasedSel/05e_LBS_Nodes", "2.2.7.8_e")
+full_submit("05_LengthBasedSel/05f_LBS_More_Constraints", "2.2.7.8_e")
+full_submit("05_LengthBasedSel/05g_LBS_Constraints_Nodes", "2.2.7.8_e")
 
 # 06_Richards
 full_submit("06_Richards/06a_Richards", "2.2.7.8_e")
