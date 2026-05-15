@@ -24,16 +24,6 @@ for(i in seq_along(from))
 }
 
 ################################################################################
-# Download from Condor to laptop
-
-# Destination folders, will be created by full_download() below
-folders <- file.path("~/x/yft/2026/model_runs/stepwise", models)
-
-# Download results
-for(i in seq_along(folders))
-  try(full_download(folders[i]))
-
-################################################################################
 # Copy from Condor to laptop
 
 # Prepare SCP commands
@@ -62,3 +52,23 @@ for(i in seq_along(from))
   message("Copying '", models[i], "'")
   system(cmd[i])
 }
+
+################################################################################
+# Download from Condor to Penguin
+
+# Destination folders, will be created by full_download() below
+folders <- file.path("z:/yft/2026/model_runs/stepwise", models)
+
+# Download results
+for(i in seq_along(folders))
+  try(full_download(folders[i]))
+
+################################################################################
+# Download from Condor to laptop
+
+# Destination folders, will be created by full_download() below
+folders <- file.path("~/x/yft/2026/model_runs/stepwise", models)
+
+# Download results
+for(i in seq_along(folders))
+  try(full_download(folders[i]))

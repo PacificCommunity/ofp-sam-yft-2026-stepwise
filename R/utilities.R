@@ -28,9 +28,9 @@ full_submit <- function(folder, version, up=TRUE, ...)
   condor_submit(folder, ...)
 }
 
-full_download <- function(folder, ...)
+full_download <- function(folder, recursive=FALSE, ...)
 {
-  dir.create(folder, recursive=TRUE, showWarnings=FALSE)
+  dir.create(folder, recursive=recursive, showWarnings=FALSE)
   condor_download(local.dir=folder, ...)
   unlink(file.path(folder, c("tmp", "var", "_condor_stderr", "_condor_stdout")))
 }
