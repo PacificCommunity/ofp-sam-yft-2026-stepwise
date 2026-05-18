@@ -59,10 +59,12 @@ full_submit("05_LengthBasedSel/05o_LBS_More_Constraints_8P", "2.2.7.8_e")
 full_submit("05_LengthBasedSel/05p_LBS_Constraints_Nodes_8P", "2.2.7.8_e")
 full_submit("05_LengthBasedSel/05q_LBS_Longline_8P", "2.2.7.8_e")
 full_submit("05_LengthBasedSel/05r_LBS_Longline_V_8P", "2.2.7.8_e")
+full_submit("05_LengthBasedSel/05s_LBS_and_ABS", "2.2.7.8_e")
 
 # 06_Richards
 full_submit("06_Richards/06a_Richards", "2.2.7.8_e")
 full_submit("06_Richards/06b_Richards_From_03m", "2.2.7.8_e")
+full_submit("06_Richards/06c_Richards_From_04a", "2.2.7.8_e")
 
 # 07_OrthoPolyRec
 full_submit("07_OrthoPolyRec/07a_Ortho_Poly_Rec_70", "2.2.7.8_e")
