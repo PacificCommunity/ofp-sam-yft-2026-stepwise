@@ -157,9 +157,46 @@ mfclo64 yft.frq 00.par 01.par -file - <<PHASE1
   -37 32 26
 # Selectivity settings
   -999 3 37  # all selectivities equal for age class 37 and older
-  -999 26 3  # use length-based selectivity
   -999 57 3  # use cubic spline selectivity
   -999 61 5  # with 5 nodes for cubic spline
+# Length-based selectivity for all fisheries except longline
+   -1 26 2  # LL.WEST.1
+   -2 26 2  # LL.EAST.1
+   -3 26 2  # LL.US.1
+   -4 26 2  # LL.WEST.4
+   -5 26 2  # LL.OS.4
+   -6 26 2  # LL.OS.2
+   -7 26 2  # LL.ALL.2
+   -8 26 2  # LL.ALL.3
+   -9 26 2  # LL.EAST.4
+  -10 26 2  # LL.AU.4 (WEST)
+  -11 26 2  # LL.ALL.4 (WEST)
+  -12 26 2  # LL.ALL.4 (EAST)
+  -13 26 3
+  -14 26 3
+  -15 26 3
+  -16 26 3
+  -17 26 3
+  -18 26 3
+  -19 26 3
+  -20 26 3
+  -21 26 3
+  -22 26 3
+  -23 26 3
+  -24 26 3
+  -25 26 3
+  -26 26 3
+  -27 26 2  # LL.AU.4 (CORAL)
+  -28 26 3
+  -29 26 2  # LL.ALL.4 (CORAL)
+  -30 26 3
+  -31 26 3
+  -32 26 3
+  -33 26 2  # INDEX 1
+  -34 26 2  # INDEX 2
+  -35 26 2  # INDEX 3
+  -36 26 2  # INDEX 4
+  -37 26 2  # INDEX 5
 # Grouping of fisheries with common selectivity
    -1 24 1   # LL ALL 1
    -2 24 2   # LL ALL 2
